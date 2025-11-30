@@ -296,6 +296,20 @@ export default function Home() {
       )}
       
       <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Logo and API Credits Section */}
+        <div className="flex flex-col items-center mb-2">
+          <img 
+            src="/Arena (14).png" 
+            alt="Source Logo" 
+            width={80}
+            height={27}
+            className="object-contain"
+          />
+          <p className="text-xs text-gray-500">
+            API Credits: <span className="font-medium text-gray-700">${totalCredits.toFixed(4)}</span>
+          </p>
+        </div>
+
         {/* Popular Tags */}
         {popularTags.length > 0 && (
           <div className="mb-6">
